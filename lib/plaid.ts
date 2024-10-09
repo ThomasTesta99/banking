@@ -1,7 +1,7 @@
-import { Configuration, PlaidApi, PlaidEnviornments } from 'plaid'
+import { Configuration, PlaidApi, PlaidEnvironments } from 'plaid'
 
 const configuration = new Configuration({
-    basePath: PlaidEnviornments.sandbox,
+    basePath: PlaidEnvironments.sandbox,
     baseOptions:{
         headers:{
             'PLAID-CLIENT-ID': process.env.PLAID_CLIENT_ID,
